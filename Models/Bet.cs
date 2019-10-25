@@ -14,6 +14,7 @@ namespace BetsApi.Models
         //public System.DateTime ExpirationDate { get; set; }
         public String Challenger {get; set;}
         public String Accepter {get; set;}
+        public List<String> Players {get; set;}
         public String Odds {get; set;}
         public Double Amount {get; set;}
         public String Description {get; set;}
@@ -22,7 +23,7 @@ namespace BetsApi.Models
         public List<Result> Results {get; set;}
         public String ResultString {get; set;}
         public bool IsComplete {get; set;} = false;
-        public String Type {get; set;} = "PERSONAL";
+        public String Type {get; set;}
 
     }
 }
